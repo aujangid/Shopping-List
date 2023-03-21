@@ -12,6 +12,7 @@ export class AppComponent {
 
   addNewItem(items: any) {
     this.newDataAdded = items
+this.showItemForm = false;
   }
   callAddItem(show: boolean) {
     this.showItemForm = show;
