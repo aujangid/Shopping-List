@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Assignment';
+  newDataAdded: any;
+  showItemForm: boolean;
+
+  addNewItem(items: any) {
+    this.newDataAdded = items
+  }
+  callAddItem(show: boolean) {
+    this.showItemForm = show;
+  }
 }

@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="d-flex justify-content-center  mt-5">
+            <table>
+                <h1>Shopping Cart</h1>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+                    <tr *ngFor="let list of shoppingCart">
+                    <td>{{list.name}}</td>
+                    <td>{{list.price}}</td>
+                    <td>
+                        <button class="btn btn-danger" (click)="removeItem(list)">Remove</button>
+                    </td>
+                </tr>
+                <button class="btn btn-primary" (click)="onAddItem()">Add Item</button>
+            </table>
+        </div>
+    </div>
+</div>
