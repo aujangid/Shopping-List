@@ -1,5 +1,5 @@
 <app-shopping-cart (showAddItemForm)="callAddItem($event)" [newDataAdded]="newDataAdded"></app-shopping-cart>
 
-<div>
-    <app-add-item-form (newItemData)="addNewItem($event)" *ngIf="showItemForm"></app-add-item-form>
+<div *ngIf="showItemForm">
+    <app-add-item-form (newItemData)="addNewItem($event)" ></app-add-item-form>
 </div>
